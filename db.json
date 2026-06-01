@@ -1,0 +1,103 @@
+{
+  "weather": [
+    {
+      "id": 1,
+      "city": "Karachi",
+      "temperature": 34,
+      "condition": "Sunny",
+      "humidity": 60,
+      "wind": 12,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 2,
+      "city": "Lahore",
+      "temperature": 38,
+      "condition": "Hazy",
+      "humidity": 45,
+      "wind": 8,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 3,
+      "city": "Islamabad",
+      "temperature": 29,
+      "condition": "Cloudy",
+      "humidity": 70,
+      "wind": 15,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 4,
+      "city": "Peshawar",
+      "temperature": 41,
+      "condition": "Sunny",
+      "humidity": 30,
+      "wind": 10,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 5,
+      "city": "Quetta",
+      "temperature": 22,
+      "condition": "Rainy",
+      "humidity": 80,
+      "wind": 20,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 6,
+      "city": "Multan",
+      "temperature": 43,
+      "condition": "Sunny",
+      "humidity": 25,
+      "wind": 7,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 7,
+      "city": "Faisalabad",
+      "temperature": 37,
+      "condition": "Hazy",
+      "humidity": 50,
+      "wind": 9,
+      "date": "2026-06-01"
+    },
+    {
+      "id": 8,
+      "city": "Murree",
+      "temperature": 15,
+      "condition": "Stormy",
+      "humidity": 90,
+      "wind": 35,
+      "date": "2026-06-01"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "condition": "Sunny",
+      "suggestions": ["Go for a walk", "Outdoor picnic", "Cycling", "Visit a park"]
+    },
+    {
+      "id": 2,
+      "condition": "Rainy",
+      "suggestions": ["Visit a museum", "Read a book", "Watch a movie", "Cook at home"]
+    },
+    {
+      "id": 3,
+      "condition": "Cloudy",
+      "suggestions": ["Go jogging", "Photography walk", "Visit a cafe", "Board games"]
+    },
+    {
+      "id": 4,
+      "condition": "Stormy",
+      "suggestions": ["Stay indoors", "Online gaming", "Study session", "Call a friend"]
+    },
+    {
+      "id": 5,
+      "condition": "Hazy",
+      "suggestions": ["Wear a mask outdoors", "Indoor workout", "Meditation", "Watch a documentary"]
+    }
+  ]
+}
