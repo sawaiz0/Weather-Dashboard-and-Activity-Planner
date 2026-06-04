@@ -1,7 +1,7 @@
 {
   "weather": [
     {
-      "id": 1,
+      "id": "1",
       "city": "Karachi",
       "temperature": 34,
       "condition": "Sunny",
@@ -10,7 +10,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "city": "Lahore",
       "temperature": 38,
       "condition": "Hazy",
@@ -19,7 +19,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 3,
+      "id": "3",
       "city": "Islamabad",
       "temperature": 29,
       "condition": "Cloudy",
@@ -28,7 +28,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 4,
+      "id": "4",
       "city": "Peshawar",
       "temperature": 41,
       "condition": "Sunny",
@@ -37,7 +37,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 5,
+      "id": "5",
       "city": "Quetta",
       "temperature": 22,
       "condition": "Rainy",
@@ -46,7 +46,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 6,
+      "id": "6",
       "city": "Multan",
       "temperature": 43,
       "condition": "Sunny",
@@ -55,7 +55,7 @@
       "date": "2026-06-01"
     },
     {
-      "id": 7,
+      "id": "7",
       "city": "Faisalabad",
       "temperature": 37,
       "condition": "Hazy",
@@ -64,40 +64,75 @@
       "date": "2026-06-01"
     },
     {
-      "id": 8,
+      "id": "8",
       "city": "Murree",
       "temperature": 15,
       "condition": "Stormy",
       "humidity": 90,
       "wind": 35,
       "date": "2026-06-01"
+    },
+    {
+      "city": "Jahanian",
+      "temperature": 40,
+      "condition": "Cloudy",
+      "humidity": 40,
+      "wind": 12,
+      "date": "2026-06-04",
+      "id": "lNFVvmuKoG8"
     }
   ],
   "activities": [
     {
-      "id": 1,
+      "id": "1",
       "condition": "Sunny",
-      "suggestions": ["Go for a walk", "Outdoor picnic", "Cycling", "Visit a park"]
+      "suggestions": [
+        "Go for a walk",
+        "Outdoor picnic",
+        "Cycling",
+        "Visit a park"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "condition": "Rainy",
-      "suggestions": ["Visit a museum", "Read a book", "Watch a movie", "Cook at home"]
+      "suggestions": [
+        "Visit a museum",
+        "Read a book",
+        "Watch a movie",
+        "Cook at home"
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "condition": "Cloudy",
-      "suggestions": ["Go jogging", "Photography walk", "Visit a cafe", "Board games"]
+      "suggestions": [
+        "Go jogging",
+        "Photography walk",
+        "Visit a cafe",
+        "Board games"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "condition": "Stormy",
-      "suggestions": ["Stay indoors", "Online gaming", "Study session", "Call a friend"]
+      "suggestions": [
+        "Stay indoors",
+        "Online gaming",
+        "Study session",
+        "Call a friend"
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "condition": "Hazy",
-      "suggestions": ["Wear a mask outdoors", "Indoor workout", "Meditation", "Watch a documentary"]
+      "suggestions": [
+        "Wear a mask outdoors",
+        "Indoor workout",
+        "Meditation",
+        "Watch a documentary"
+      ]
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
