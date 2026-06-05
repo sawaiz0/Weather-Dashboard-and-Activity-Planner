@@ -244,3 +244,132 @@ footer {
   background: white;
   border-top: 1px solid #eee;
 }
+
+
+/* ── Admin Nav ── */
+.admin-nav {
+  background: #2d6a4f;
+}
+
+/* ── Stats Section ── */
+.stats-section {
+  margin-bottom: 2rem;
+}
+
+.stats-section h2 {
+  margin-bottom: 1rem;
+  color: #2d6a4f;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+/* ── Table ── */
+.table-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.table-section h2 {
+  margin-bottom: 1rem;
+  color: #2d6a4f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+thead {
+  background: #2d6a4f;
+  color: white;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* ── Action Buttons ── */
+.btn-edit {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.btn-delete {
+  background: #d93025;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-edit:hover {
+  background: #1558b0;
+}
+
+.btn-delete:hover {
+  background: #b71c1c;
+}
+
+/* ── Form Buttons ── */
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-buttons button[type="button"] {
+  width: 100%;
+  padding: 0.8rem;
+  background: #999;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-buttons button[type="button"]:hover {
+  background: #777;
+}

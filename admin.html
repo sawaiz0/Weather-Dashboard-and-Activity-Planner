@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="admin-nav">
+    <span class="nav-brand">🔧 Admin Panel</span>
+    <a href="index.html">User Panel</a>
+  </nav>
+
+  <main>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <h2>Dashboard Statistics</h2>
+      <div class="stats-grid">
+
+        <div class="stat-card">
+          <p class="stat-label">Total Cities</p>
+          <p class="stat-value" id="totalCities">--</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-label">Average Temperature</p>
+          <p class="stat-value" id="avgTemp">--</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-label">Most Common Condition</p>
+          <p class="stat-value" id="commonCondition">--</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Loading & Error -->
+    <p id="loadingMsg" class="loading">Loading data...</p>
+    <p id="errorMsg" class="error hidden">Could not load data. Is JSON Server running?</p>
+
+    <!-- Weather Table -->
+    <section class="table-section">
+      <h2>All Weather Entries</h2>
+      <table id="weatherTable">
+        <thead>
+          <tr>
+            <th>City</th>
+            <th>Temp (°C)</th>
+            <th>Condition</th>
+            <th>Humidity (%)</th>
+            <th>Wind (km/h)</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="weatherTableBody">
+          <!-- Rows injected by admin.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Edit Form -->
+    <section class="form-section" id="editFormSection" style="display:none;">
+      <h2>Edit City Weather</h2>
+      <form id="editWeatherForm">
+
+        <input type="hidden" id="editId" />
+
+        <div class="form-group">
+          <label for="editCity">City Name</label>
+          <input type="text" id="editCity" />
+          <span class="error-msg" id="editCityError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="editTemperature">Temperature (°C)</label>
+          <input type="number" id="editTemperature" />
+          <span class="error-msg" id="editTemperatureError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="editCondition">Condition</label>
+          <select id="editCondition">
+            <option value="">Select condition</option>
+            <option value="Sunny">Sunny</option>
+            <option value="Rainy">Rainy</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Stormy">Stormy</option>
+            <option value="Hazy">Hazy</option>
+          </select>
+          <span class="error-msg" id="editConditionError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="editHumidity">Humidity (%)</label>
+          <input type="number" id="editHumidity" />
+          <span class="error-msg" id="editHumidityError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="editWind">Wind Speed (km/h)</label>
+          <input type="number" id="editWind" />
+          <span class="error-msg" id="editWindError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="editDate">Date</label>
+          <input type="date" id="editDate" />
+          <span class="error-msg" id="editDateError"></span>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit">Save Changes</button>
+          <button type="button" id="cancelEdit">Cancel</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Weather Dashboard & Activity Planner &copy; 2026</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>
