@@ -106,16 +106,18 @@ main {
 /* ── Weather Grid ── */
 .weather-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.2rem;
-  margin-bottom: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 /* ── Weather Card ── */
 .weather-card {
   background: white;
   border-radius: 12px;
-  padding: 1.2rem;
+  padding: 0.8rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s;
 }
@@ -125,79 +127,82 @@ main {
 }
 
 .weather-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
   color: #1a73e8;
 }
 
 .weather-card p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #555;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .weather-card .temp {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #333;
 }
 
 .activities {
-  margin-top: 0.8rem;
-  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   border-top: 1px solid #eee;
 }
 
 .activities p {
   font-weight: 600;
   color: #333;
-  margin-bottom: 0.4rem;
-}
-
-.activities ul {
-  padding-left: 1.2rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .activities ul li {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: #555;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
+}
+
+
+.activities ul {
+  padding-left: 1.2rem;
 }
 
 /* ── Form Section ── */
 .form-section {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   max-width: 600px;
   margin: 0 auto;
 }
 
 .form-section h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   color: #1a73e8;
+  font-size: 1rem;
 }
 
 .form-group {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
   display: flex;
   flex-direction: column;
 }
 
 .form-group label {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
   color: #444;
 }
 
 .form-group input,
 .form-group select {
-  padding: 0.6rem 0.9rem;
+  padding: 0.4rem 0.8rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   outline: none;
   transition: border 0.2s;
 }
@@ -243,6 +248,40 @@ footer {
   color: #999;
   background: white;
   border-top: 1px solid #eee;
+}
+
+/* ── Content Layout ── */
+.content-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cards-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.form-container {
+  width: 360px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 1rem;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.form-container .form-section {
+  margin: 0;
+  max-width: 100%;
 }
 
 

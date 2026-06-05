@@ -37,13 +37,17 @@
     <p id="loadingMsg" class="loading">Loading weather data...</p>
     <p id="errorMsg" class="error hidden">Could not load data. Is JSON Server running?</p>
 
-    <!-- Weather Cards -->
-    <section id="weatherList" class="weather-grid">
-      <!-- Cards injected by app.js -->
-    </section>
+    <!-- Main Content Area -->
+    <div class="content-layout">
 
-    <!-- Add New Weather Form -->
-    <section class="form-section">
+      <!-- Weather Cards -->
+      <section id="weatherList" class="weather-grid">
+        <!-- Cards injected by app.js -->
+      </section>
+
+      <!-- Add New Weather Form -->
+      <aside class="form-container">
+        <section class="form-section">
       <h2>Add New City Weather</h2>
       <form id="addWeatherForm">
 
@@ -94,6 +98,9 @@
 
       </form>
     </section>
+      </aside>
+
+    </div>
 
   </main>
 

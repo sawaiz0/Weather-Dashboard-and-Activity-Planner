@@ -80,6 +80,15 @@
       "wind": 12,
       "date": "2026-06-04",
       "id": "lNFVvmuKoG8"
+    },
+    {
+      "city": "Khanewal",
+      "temperature": 39,
+      "condition": "Sunny",
+      "humidity": 49,
+      "wind": 3,
+      "date": "2026-06-05",
+      "id": "kK6HI1CEKxg"
     }
   ],
   "activities": [
