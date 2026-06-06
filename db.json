@@ -1,22 +1,22 @@
 {
   "weather": [
     {
-      "id": "1",
       "city": "Karachi",
       "temperature": 34,
-      "condition": "Sunny",
+      "condition": "Rainy",
       "humidity": 60,
-      "wind": 12,
-      "date": "2026-06-01"
+      "wind": 15,
+      "date": "2026-06-01",
+      "id": "1"
     },
     {
-      "id": "2",
       "city": "Lahore",
       "temperature": 38,
       "condition": "Hazy",
       "humidity": 45,
       "wind": 8,
-      "date": "2026-06-01"
+      "date": "2026-06-01",
+      "id": "2"
     },
     {
       "id": "3",
@@ -62,33 +62,6 @@
       "humidity": 50,
       "wind": 9,
       "date": "2026-06-01"
-    },
-    {
-      "id": "8",
-      "city": "Murree",
-      "temperature": 15,
-      "condition": "Stormy",
-      "humidity": 90,
-      "wind": 35,
-      "date": "2026-06-01"
-    },
-    {
-      "city": "Jahanian",
-      "temperature": 40,
-      "condition": "Cloudy",
-      "humidity": 40,
-      "wind": 12,
-      "date": "2026-06-04",
-      "id": "lNFVvmuKoG8"
-    },
-    {
-      "city": "Khanewal",
-      "temperature": 39,
-      "condition": "Sunny",
-      "humidity": 49,
-      "wind": 3,
-      "date": "2026-06-05",
-      "id": "kK6HI1CEKxg"
     }
   ],
   "activities": [
